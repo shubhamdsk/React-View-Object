@@ -1,0 +1,10 @@
+# .gitignore
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore any other unnecessary files/folders you may want to exclude, like:
+# .env
+# .DS_Store (for macOS)
+# .idea/ (for JetBrains IDEs)
+# .vscode/ (for Visual Studio Code)
