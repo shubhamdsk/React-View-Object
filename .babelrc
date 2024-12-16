@@ -1,19 +1,18 @@
 {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": "> 0.25%, not dead",  
-          "useBuiltIns": "entry",  
-          "corejs": 3  
-        }
-      ],
-      "@babel/preset-react"
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, not dead",  
+        "useBuiltIns": "entry",         
+        "corejs": 3                       
+      }
     ],
-    "plugins": [
-      "@babel/plugin-transform-runtime",  
-      "@babel/plugin-proposal-class-properties",  
-      "@babel/plugin-proposal-private-methods"  
-    ]
-  }
-  
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",  
+    "@babel/plugin-proposal-class-properties",  
+    "@babel/plugin-proposal-private-methods"    
+  ]
+}
