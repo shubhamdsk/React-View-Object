@@ -38,7 +38,7 @@ In your React component (e.g., App.js), import ReactViewObject and pass a JavaSc
 
 ```javascript
 import React from "react";
-import ReactViewObject from "react-view-object";
+import { ReactViewObject } from "react-view-object";
 
 const App = () => {
   const complexObject = {
