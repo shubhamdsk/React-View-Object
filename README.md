@@ -37,27 +37,41 @@ npm install react-view-object
 In your React component (e.g., App.js), import ReactViewObject and pass a JavaScript object to display it.
 
 ```javascript
-import React, { useState } from "react";
-import { ReactViewObject } from "react-view-object"; // Import the React component
+import React from "react";
+import ReactViewObject from "react-view-object";
 
 const App = () => {
-  // Example object to visualize
-  const [user, setUser] = useState({
+  const complexObject = {
     name: "John Doe",
     age: 30,
+    isActive: true,
     address: {
       street: "123 Main St",
       city: "Anytown",
       country: "USA",
+      postalCode: {
+        code: "12345",
+        extended: "6789",
+      },
     },
     hobbies: ["Reading", "Traveling", "Coding"],
-    isActive: true,
-  });
+    friends: [
+      { name: "Alice", age: 28 },
+      { name: "Bob", age: 32 },
+    ],
+    additionalInfo: {
+      languages: ["English", "Spanish"],
+      certifications: {
+        programming: ["React", "Node.js", "Python"],
+        languages: ["TOEFL", "DELE"],
+      },
+    },
+  };
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>User Details</h1>
-      <ReactViewObject object={user} depth={3} /> {/* Pass the object and depth */}
+      <h1>Complex Object Viewer</h1>
+      <ReactViewObject object={complexObject} />
     </div>
   );
 };
@@ -74,7 +88,7 @@ export default App;
 Make sure you have React set up in your app, then run:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Your complex object will be displayed in a readable format.
@@ -190,7 +204,9 @@ npm link
 ```bash
 npm link react-view-object
 ```
+
 ## Depth Parameter
+
 The `depth` parameter controls how deeply nested objects are displayed:
 
 - `depth=1`: Displays only the top-level properties.
@@ -202,7 +218,6 @@ The default depth is `2` if not provided.
 # Contributing
 
 We welcome contributions! If you'd like to contribute, please fork the repository and create a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
 
 # License
 
