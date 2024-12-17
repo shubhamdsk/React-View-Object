@@ -43,5 +43,9 @@
   "bugs": {
     "url": "https://github.com/shubhamdsk/React-View-Object/issues"
   },
-  "homepage": "https://github.com/shubhamdsk/React-View-Object#readme"
+  "homepage": "https://github.com/shubhamdsk/React-View-Object#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.26.0",
+    "core-js": "^3.39.0"
+  }
 }
