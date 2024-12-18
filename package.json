@@ -1,6 +1,6 @@
 {
   "name": "react-view-object",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "A library to render and display complex JavaScript objects in a human-readable, hierarchical format, for plain JavaScript environments.",
   "main": "lib/index.js",
   "exports": {
