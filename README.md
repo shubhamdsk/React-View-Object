@@ -71,7 +71,7 @@ const App = () => {
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
       <h1>Complex Object Viewer</h1>
-      <ReactViewObject object={complexObject} />
+      <ReactViewObject object={complexObject} depth={3} />
     </div>
   );
 };
